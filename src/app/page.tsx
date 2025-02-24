@@ -31,10 +31,10 @@ export default function Home() {
           }
         </script>`;
     }
-
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000);
+    setLoader(false);
+    // setTimeout(() => {
+    //   setLoader(false);
+    // }, 2000);
   };
 
   useEffect(() => {
