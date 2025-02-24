@@ -24,10 +24,10 @@ export const runcode = async () => {
     );
 
     console.log(response.data);
-  } catch (error) {
-    console.error(
-      "Error:",
-      error.response ? error.response.data : error.message
-    );
+  } catch (error:any) {
+    // console.error(
+    //   "Error:",
+    //   error.response ? error.response.data : error.message
+    // );
   }
 };
