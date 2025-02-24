@@ -10,24 +10,24 @@ export const getRuntimes = async () => {
   }
 };
 export const runcode = async () => {
-  try {
-    const response = await axios.post(
-      "https://emkc.org/api/v2/piston/execute",
-      {
-        language: "python",
-        version: "3.10.0",
-        files: [{ content: "print('Hello, World!')" }],
-      },
-      {
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+  // try {
+  //   const response = await axios.post(
+  //     "https://emkc.org/api/v2/piston/execute",
+  //     {
+  //       language: "python",
+  //       version: "3.10.0",
+  //       files: [{ content: "print('Hello, World!')" }],
+  //     },
+  //     {
+  //       headers: { "Content-Type": "application/json" },
+  //     }
+  //   );
 
-    console.log(response.data);
-  } catch (error:any) {
-    // console.error(
-    //   "Error:",
-    //   error.response ? error.response.data : error.message
-    // );
-  }
+  //   console.log(response.data);
+  // } catch (error:any) {
+  //   // console.error(
+  //   //   "Error:",
+  //   //   error.response ? error.response.data : error.message
+  //   // );
+  // }
 };
